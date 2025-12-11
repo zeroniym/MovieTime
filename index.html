@@ -24,64 +24,132 @@
 </header>
 
 <main class="container">
+
+    <!-- Hero с видео/картинкой -->
     <section class="hero">
-        <h1>Смотрите лучшие фильмы онлайн</h1>
-        <p>Новинки кино, классика, подборки по жанрам — всё в одном месте.</p>
-        <a href="#" class="btn">Смотреть сейчас</a>
-    </section>
-
-    <section class="features">
-        <h2>Наши преимущества</h2>
-        <div class="feature-cards">
-            <div class="card">
-                <img src="img/Large_selection.webp" alt="Выбор фильмов">
-                <h3>Большой выбор</h3>
-                <p>Сотни фильмов разных жанров для любого вкуса.</p>
-            </div>
-            <div class="card">
-                <img src="img/Full_HD.jpg" alt="Высокое качество">
-                <h3>Высокое качество</h3>
-                <p>Видео в HD и Full HD без тормозов и рекламы.</p>
-            </div>
-            <div class="card">
-                <img src="img/Availability.png" alt="Доступность">
-                <h3>Доступность</h3>
-                <p>Смотрите фильмы с любого устройства, где бы вы ни были.</p>
-            </div>
+        <div class="hero-content">
+            <h1>Смотрите лучшие фильмы онлайн</h1>
+            <p>Новинки кино, классика и подборки по жанрам — всё в одном месте.</p>
+            <a href="#" class="btn">Смотреть сейчас</a>
         </div>
     </section>
-</main>
-<section class="gallery">
-    <h2>Галерея</h2>
 
-    <div class="gallery-grid">
-        <div class="photo">
-            <img src="img/1w.jpg" alt="gallery image">
+    <!-- новинки недели -->
+    <section class="poster-line">
+    <h2>Новинки недели</h2>
+
+    <div class="line-wrapper">
+
+        <div class="line-arrow left" id="arrow-left">&#10094;</div>
+
+        <div class="line-mask">
+            <div class="line-container" id="line">
+                <img src="img/now_1.jpg">
+                <img src="img/now_2.jpg">
+                <img src="img/now_3.webp">
+                <img src="img/now_4.jpg">
+                <img src="img/now_5.jpg">
+                <img src="img/now_6.jpg">
+                <img src="img/now_7.jpg">
+                <img src="img/now_8.jpg">
+                <img src="img/now_9.jpg">
+                <img src="img/now_10.jpg">
+                <img src="img/now_11.jpg">
+                <img src="img/now_12.jpg">
+                <img src="img/now_13.jpg">
+                <img src="img/now_14.webp">
+            </div>
         </div>
-        <div class="photo">
-            <img src="img/2w.jpg" alt="gallery image">
-        </div>
-        <div class="photo">
-            <img src="img/3w.jpg" alt="gallery image">
-        </div>
-        <div class="photo">
-            <img src="img/4w.jpg" alt="gallery image">
-        </div>
-        <div class="photo">
-            <img src="img/5w.jpg" alt="gallery image">
-        </div>
-        <div class="photo">
-            <img src="img/6w.jpg" alt="gallery image">
-        </div>
+
+        <div class="line-arrow right" id="arrow-right">&#10095;</div>
+
     </div>
 </section>
 
+    <!-- Блок жанров -->
+    <section class="genres">
+        <h2>Жанры фильмов</h2>
+        <div class="genre-cards">
+            <div class="genre">Экшен</div>
+            <div class="genre">Комедия</div>
+            <div class="genre">Драма</div>
+            <div class="genre">Ужасы</div>
+            <div class="genre">Фантастика</div>
+            <div class="genre">Мультфильмы</div>
+        </div>
+    </section>
 
+    <!-- Топ фильмов -->
+    <section class="top-movies">
+        <h2>Топ фильмов</h2>
+        <div class="movie-cards">
+            <div class="movie-card">
+                <img src="img/Top_1.webp" alt="Топ 1">
+                <h3>Форрест Гамп</h3>
+                <p>Обычный человек в центре необычной истории Америки. Его главное достижение — не слава, а любовь.</p>
+            </div>
+            <div class="movie-card">
+                <img src="img/Top_2.webp" alt="Топ 2">
+                <h3>Зелёная миля</h3>
+                <p>Тюремный надзиратель встречает заключённого, совершающего чудеса. Иногда ангелы приходят в самое адское место.</p>
+            </div>
+            <div class="movie-card">
+                <img src="img/Top_3.webp" alt="Топ 3">
+                <h3>Побег из Шоушенка</h3>
+                <p>Невиновный банкир за решёткой планирует не просто побег, а возмездие. Надежда — опасная штука.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery">
+        <h2>Галерея фильмов</h2>
+        <div class="gallery-grid">
+            <div class="photo"><img src="img/1w.jpg" alt="gallery image"></div>
+            <div class="photo"><img src="img/2w.jpg" alt="gallery image"></div>
+            <div class="photo"><img src="img/3w.jpg" alt="gallery image"></div>
+            <div class="photo"><img src="img/4w.jpg" alt="gallery image"></div>
+            <div class="photo"><img src="img/5w.jpg" alt="gallery image"></div>
+            <div class="photo"><img src="img/6w.jpg" alt="gallery image"></div>
+        </div>
+    </section>
+
+    <!-- Почему выбирают нас -->
+    <section class="why-us">
+        <h2>Почему выбирают нас</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Удобство</h3>
+                <p>Легко находить фильмы и получать информацию в один клик.</p>
+            </div>
+            <div class="card">
+                <h3>Скорость</h3>
+                <p>Сайт быстро загружается на всех устройствах.</p>
+            </div>
+            <div class="card">
+                <h3>Качество</h3>
+                <p>HD и Full HD без рекламы и задержек.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="subscribe">
+        <h2>Подпишитесь на новости</h2>
+        <p>Будьте в курсе новинок кино каждый день</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Введите ваш email" required>
+            <button type="submit" class="btn">Подписаться</button>
+        </form>
+    </section>
+
+</main>
 <footer>
     <p>Телефон: +7 (123) 456-78-90 | Email: info@filmogid.ru</p>
     <p>© 2025 MovieTime. Все права защищены.</p>
 </footer>
-<script src="js/script.js"></script>
+
+<script src="js/script.js" defer></script>
 
 </body>
 </html>

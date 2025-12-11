@@ -1,17 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.body.classList.add("fade-in");
-});
+const line = document.getElementById('line');
+const btnLeft = document.getElementById('arrow-left');
+const btnRight = document.getElementById('arrow-right');
 
-document.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", function(e) {
-        const href = this.getAttribute("href");
-        if(href && !href.startsWith("#")) {
-            e.preventDefault();
-            document.body.classList.remove("fade-in");
-            document.body.classList.add("fade-out");
-            setTimeout(() => {
-                window.location.href = href;
-            }, 1000); // таймер теперь совпадает с 1s анимации
-        }
-    });
-});
+let offset = 0;
+const posterWidth = 220; // ширина постера + gap (200 + 20)
+const visibleWidth = 1200; // ширина области (можешь менять)
+const maxOffset = (line.children.length * posterWidth) - visibleWidth;
+
+// Плавная анимация только для контейнера
+line.style.transition = "transform 1s ease-in-out";
+
+btnRight.onclick = () => {
+    if (offset > -maxOffset) {
+        offset -= posterWidth;
+        line.style.transform = `translateX(${offset}px)`;
+    }
+};
